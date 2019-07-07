@@ -129,7 +129,7 @@ public class CraftControl extends JavaPlugin {
         
         new GUIUpdateTask().runTaskTimer(this, 100, 20);
         
-        new Updater(67903) {
+        new Updater(69036) {
     
             @Override
             public void onUpdateAvailable() {
