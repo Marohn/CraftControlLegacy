@@ -77,6 +77,11 @@ public class CraftListener implements Listener {
                     e.setResult(vanillaRecipe.getResult());
                     return;
                 }
+    
+                if ((e.getSource().getType().toString().contains("WOOD") || e.getSource().getType().toString().contains("LOG")) && !e.getSource().hasItemMeta()) {
+                    e.setResult(new ItemStack(Material.COAL, 1, (short) 1));
+                    return;
+                }
             }
         }
         
