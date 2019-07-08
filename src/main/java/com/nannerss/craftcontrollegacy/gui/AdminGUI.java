@@ -410,7 +410,7 @@ public class AdminGUI {
         inv.setItem(19, typeButton);
         inv.setItem(43, RecipeFurnaceButtons.getSaveButton());
         
-        inv.setItem(21, recipe.getInput());
+        inv.setItem(22, recipe.getInput());
         inv.setItem(25, recipe.getResult());
     }
     

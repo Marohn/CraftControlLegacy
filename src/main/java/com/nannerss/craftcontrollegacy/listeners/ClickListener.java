@@ -559,7 +559,7 @@ public class ClickListener implements Listener {
                         } else if (e.getCurrentItem().equals(RecipeFurnaceButtons.getSaveButton())) {
                             e.setCancelled(true);
                             
-                            if (e.getClickedInventory().getItem(21) == null || e.getClickedInventory().getItem(25) == null) {
+                            if (e.getClickedInventory().getItem(22) == null || e.getClickedInventory().getItem(25) == null) {
                                 GUISounds.playBassSound(p);
             
                                 final ItemStack button = e.getCurrentItem().clone();
@@ -582,7 +582,7 @@ public class ClickListener implements Listener {
                             final String name = CraftControl.getEditSessions().getIfPresent(p.getUniqueId());
                             
                             final CustomRecipe recipe = CraftControl.getRecipe(name);
-                            final ItemStack input = e.getClickedInventory().getItem(21).clone();
+                            final ItemStack input = e.getClickedInventory().getItem(22).clone();
                             input.setAmount(1);
         
                             recipe.setType(CustomRecipeType.FURNACE);
@@ -802,7 +802,7 @@ public class ClickListener implements Listener {
                         } else if (e.getCurrentItem().equals(RecipeFurnaceButtons.getSaveButton())) {
                             e.setCancelled(true);
                 
-                            if (e.getClickedInventory().getItem(21) == null || e.getClickedInventory().getItem(25) == null) {
+                            if (e.getClickedInventory().getItem(22) == null || e.getClickedInventory().getItem(25) == null) {
                                 GUISounds.playBassSound(p);
                     
                                 final ItemStack button = e.getCurrentItem().clone();
@@ -839,7 +839,7 @@ public class ClickListener implements Listener {
     
                             before.setItemMeta(beforeMeta);
                             
-                            final ItemStack input = e.getClickedInventory().getItem(21).clone();
+                            final ItemStack input = e.getClickedInventory().getItem(22).clone();
                             input.setAmount(1);
                 
                             recipe.setType(CustomRecipeType.FURNACE);
